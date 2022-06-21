@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link href="favicon-16.png" rel="icon" type="image/x-icon">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<h2>Здравствуйте! Ваши данные:</h2>
+<table class="table" style="width: 21%;margin-left: 0;">
+    <thead><tr><td>Логин</td><td>Пароль</td></tr></thead>
+        <tr><td>{{ curUser.login }}</td><td>{{ curUser.password }}</td></tr>
+</table>
+
+<h2>Данные всех юзеров:</h2>
+<table class="table" style="width: 21%;margin-left: 0;">
+    <thead><tr><td>Логин</td><td>Пароль</td></tr></thead>
+    {% for user in users %}
+        <tr><td>{{ user.login }}</td><td>{{ user.password }}</td></tr>
+    {% endfor %}
+</table>
+
+<button type="button" class="button" onclick="window.location.href = 'http://fefu.ml:1615/logout?'" style="width: 21%; margin-left: 0;margin-top:1%;">
+    Выход
+</button>
+
+</html>

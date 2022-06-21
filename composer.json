@@ -1,0 +1,13 @@
+{
+    "name": "root/auth",
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "src/Controllers/",
+            "Models\\": "src/Models/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.4",
+        "ext-pdo": "*"
+    }
+}

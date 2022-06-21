@@ -1,0 +1,171 @@
+/*Body*/
+body {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+/*Menu*/
+nav {
+    margin: 10px auto 0;
+    position: relative;
+    width: 80%;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .2s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 25%;
+}
+
+a:nth-child(2) {
+    width: 25%;
+}
+
+a:nth-child(3) {
+    width: 25%;
+}
+
+a:nth-child(4) {
+    width: 25%;
+}
+
+nav .start-cars, a:nth-child(1):hover ~ .animation {
+    width: 25%;
+    left: 0;
+    background-color: #3498db;
+}
+
+nav .start-parts, a:nth-child(2):hover ~ .animation {
+    width: 25%;
+    left: 25%;
+    background-color: #3498db;
+}
+
+nav .start-requests, a:nth-child(3):hover ~ .animation {
+    width: 25%;
+    left: 50%;
+    background-color: #3498db;
+}
+
+nav .start-favourites, a:nth-child(4):hover ~ .animation {
+    width: 25%;
+    left: 75%;
+    background-color: #3498db;
+}
+
+/*table*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 10%;
+}
+
+.table td {
+    padding: 12px 16px;
+}
+
+.table thead tr {
+    font-weight: bold;
+    border-top: 1px solid #e8e9eb;
+    color: darkblue;
+}
+
+.table tr {
+    border-bottom: 1px solid #e8e9eb;
+}
+
+.table tbody tr:hover {
+    background: #e8f6ff;
+}
+
+/*Buttons*/
+.button {
+    margin: 0 10%;
+    position: relative;
+    width: 20%;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-width: 0;
+}
+
+.button:hover {
+    transition: all .2s ease 0s;
+    background-color: #3498db;
+}
+
+/*Form*/
+ form {
+     width: 60%;
+     margin-left: 18.5%;
+     margin-top: 30px;
+     background-color: blanchedalmond;
+     border-radius: 8px;
+     padding: 3% 1.5% 2%;
+     box-shadow: 5px 10px 10px #34495e;
+ }
+
+form input {
+    margin: 0;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    background: white;
+    border: 0;
+    height: 50px;
+}
+
+form select {
+    width: 32%;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border-color: lightgray;
+}
+
+form select:hover {
+    border-color: darkgray;
+}
+
+form select optgroup {
+    font-size: 16px;
+}
